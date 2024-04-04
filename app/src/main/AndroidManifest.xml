@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MypizzaA"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_main_pago"
+            android:exported="false" />
+        <activity
             android:name=".activity_main_bebidas"
             android:exported="false" />
         <activity
