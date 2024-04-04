@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PizzasActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú de Pizzas"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <LinearLayout
+        android:id="@+id/pizzaMenuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp">
+
+        <!-- Pizza 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pizza1"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza peperoni"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/pizza1PriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$10"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+
+            <Button
+                android:id="@+id/addPizza1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <!-- Pizza 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pizza2"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza Hawaiana"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/pizza2PriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$12"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+
+            <Button
+                android:id="@+id/addPizza2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- Pizza 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pizza3"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza Vegetariana"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/pizza3PriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$11"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+
+            <Button
+                android:id="@+id/addPizza3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botones -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_below="@id/pizzaMenuLayout"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pagar"
+        android:layout_below="@id/pizzaMenuLayout"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

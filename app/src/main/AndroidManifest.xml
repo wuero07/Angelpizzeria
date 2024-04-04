@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MypizzaA"
         tools:targetApi="31">
         <activity
+            android:name=".PizzasActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityMenuprincipal"
             android:exported="false" />
         <activity
