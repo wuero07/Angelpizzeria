@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú de Pizzas y Bebidas"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+
+    <Button
+        android:id="@+id/btnpizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizzas"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+
+    <ImageView
+        android:id="@+id/pizzaImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnpizza"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/pizzaimage"/>
+
+
+    <Button
+        android:id="@+id/btnbebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bebidas"
+        android:layout_below="@id/pizzaImageView"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"/>
+
+
+    <ImageView
+        android:id="@+id/bebidaImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnbebida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/bebidaimage"/>
+
+</RelativeLayout>
