@@ -3,10 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondopizza1"
     tools:context=".PizzasActivity">
 
     <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
         android:id="@+id/titleTextView"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menú de Pizzas"
@@ -38,6 +49,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pizza peperoni"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
@@ -46,18 +59,23 @@
                 android:id="@+id/pizza1PriceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$10"
+                android:text="$100"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
 
             <Button
                 android:id="@+id/addPizza1Button"
-                android:layout_width="wrap_content"
+                android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="Agregar"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#19FD00"
+                android:text="Agregar"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
         </LinearLayout>
 
 
@@ -77,6 +95,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pizza Hawaiana"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
@@ -85,18 +105,23 @@
                 android:id="@+id/pizza2PriceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$12"
+                android:text="$120"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
 
             <Button
                 android:id="@+id/addPizza2Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Agregar"
+                android:layout_width="93dp"
+                android:layout_height="54dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#26FD00"
+                android:text="Agregar"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
 
@@ -112,30 +137,38 @@
                 android:src="@drawable/pizza3"
                 android:scaleType="fitXY"/>
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pizza Vegetariana"
-                android:textSize="18sp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:text="Pizza mexicana"
+                android:textStyle="bold"
+                android:textColor="#070707"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/pizza3PriceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$11"
-                android:textSize="18sp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:text="$110"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/addPizza3Button"
-                android:layout_width="wrap_content"
+                android:layout_width="91dp"
                 android:layout_height="wrap_content"
-                android:text="Agregar"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#4CFD00"
+                android:text="Agregar"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
@@ -146,8 +179,10 @@
         android:layout_height="wrap_content"
         android:text="Regresar"
         android:layout_below="@id/pizzaMenuLayout"
+        android:backgroundTint="#19FA00"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
         android:layout_alignParentEnd="true"/>
 
     <Button
@@ -157,17 +192,23 @@
         android:text="Pagar"
         android:layout_below="@id/pizzaMenuLayout"
         android:layout_marginTop="24dp"
+        android:backgroundTint="#59FD00"
         android:layout_marginStart="16dp"
+        android:textColor="@color/black"
         android:layout_alignParentStart="true"/>
 
-    <Button
-        android:id="@+id/nextButton"
+
+    <TextView
+        android:id="@+id/selectedPizzasTextView"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Siguiente"
-        android:layout_below="@id/backButton"
-        android:layout_marginTop="24dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_below="@id/pizzaMenuLayout"
+        android:layout_marginTop="151dp"
+        android:padding="8dp"
+        android:text="Pizzas seleccionadas:"
+        android:textStyle="bold"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>

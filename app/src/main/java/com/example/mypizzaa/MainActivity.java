@@ -29,23 +29,19 @@ public class MainActivity extends AppCompatActivity {
                 String contraseña = editTextContrasena.getText().toString();
 
                 if (!usuario.isEmpty() && !contraseña.isEmpty()) {
-                    // Aquí se realiza la validación de usuario y contraseña
                     if (usuario.equals(USUARIO_VALIDO) && contraseña.equals(CONTRASENA_VALIDA)) {
-                        // Si la validación es exitosa, se muestra un mensaje de inicio de sesión exitoso
                         Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
-                        // Y se inicia MainActivity
                         Intent intent = new Intent(MainActivity.this, MainActivityMenuprincipal.class);
+                        intent.putExtra("nombreUsuario", usuario); // Enviar el nombre de usuario
                         startActivity(intent);
                     } else {
-                        // Si la validación falla, se muestra un mensaje de error
                         Toast.makeText(MainActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    // Si alguno de los campos está vacío, se muestra un mensaje solicitando completar ambos campos
                     Toast.makeText(MainActivity.this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
     }
 }
-

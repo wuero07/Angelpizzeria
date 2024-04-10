@@ -3,14 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_main_bebidas">
+    tools:context=".activity_main_bebidas"
+    android:background="@drawable/fondobebidas1">
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menú de Bebidas"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"/>
 
@@ -40,13 +52,16 @@
                 android:layout_height="wrap_content"
                 android:text="Coca-Cola"
                 android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$2"
+                android:text="$16"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
@@ -56,6 +71,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Agregar"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
         </LinearLayout>
@@ -77,25 +94,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Jugo de Naranja"
+                android:textStyle="bold"
                 android:textSize="18sp"
+                android:textColor="@color/black"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$3"
+                android:text="$20"
                 android:textSize="18sp"
+                android:textColor="@color/black"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
 
             <Button
                 android:id="@+id/addBebida2Button"
-                android:layout_width="wrap_content"
+                android:layout_width="92dp"
                 android:layout_height="wrap_content"
-                android:text="Agregar"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:text="Agregar"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
 
@@ -116,13 +139,16 @@
                 android:layout_height="wrap_content"
                 android:text="Agua Mineral"
                 android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$1"
+                android:text="$10"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
@@ -132,6 +158,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Agregar"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"/>
         </LinearLayout>
@@ -146,6 +174,8 @@
         android:layout_below="@id/bebidaMenuLayout"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:layout_alignParentEnd="true"/>
 
     <Button
@@ -156,7 +186,21 @@
         android:layout_below="@id/bebidaMenuLayout"
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/selectedBebidasTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bebidaMenuLayout"
+        android:layout_marginTop="81dp"
+        android:padding="8dp"
+        android:text="Bebidas seleccionadas:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>
